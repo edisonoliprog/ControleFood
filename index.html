@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Projeto Fat Food</title>
+    <style>
+
+    div{
+
+              background-color: rgb(177, 6, 15);
+    }
+     
+     body{
+         background-color: rgb(139, 2, 2);
+         color: rgb(79, 180, 79);
+         text-decoration: greenyellow;
+     }
+     
+     h1{
+
+        background-color: rgb(214, 0, 0);
+     }
+
+     h2{
+
+        background-color: rgb(151, 40, 40);
+        color: whitesmoke;
+     }
+
+    </style>
+
+
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid.color".color>
+    <div class="container container-fluid".color>
+      <h1 class="display-4.color">Precisando controlar sua alimentação?</h1>
+      <p class="lead">
+        Você quer melhorar o que você come? Então, bem vindo ao Fat Food
+      </p>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+
+    <div class="col-1 card">
+      <div class="card-header">
+      </div>
+      <div class="card-body">
+        <div class="accordian">
+          <div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="monB" />
+            <label class="tab-heading" for="monB">
+              <h2>Café da Manha</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control recipe-box" rows="5" cols="15" id="monb-textarea"></textarea>
+
+            </div>
+          </div>
+          <div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="monL" />
+            <label class="tab-heading" for="monL">
+              <h2>Lanche da Manhã</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control" rows="5" cols="15" id="recipe-box"></textarea>
+            </div>
+          </div>
+          <div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="monD" />
+            <label class="tab-heading" for="monD">
+              <h2>Almoço</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control" rows="5" cols="15" id="recipe-box"></textarea>
+            </div>
+          </div><div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="monD" />
+            <label class="tab-heading" for="monD">
+              <h2>Lanche da Tarde</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control" rows="5" cols="15" id="recipe-box"></textarea>
+            </div>
+          </div>
+          <div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="monD" />
+            <label class="tab-heading" for="monD">
+              <h2>Jantar</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control" rows="5" cols="15" id="recipe-box"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 card">
+      <div class="card-header">
+      </div>
+      <div class="card-body">
+        <div class="accordian">
+          <div class="tabs">
+            <input type="radio" class="meal-selection" name="tab" id="tuesB" />
+            <label class="tab-heading" for="tuesB">
+              <h2>Lanche da Noite</h2>
+            </label>
+            <div class="tab-content">
+              <textarea class="form-control" rows="5" cols="15" id="recipe-box"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="whole-wrapper animated bounceInDown">
+      <div class="search-wrapper">
+        <h3>Procure o Restaurante mais próximo de você...
+
+        </h3>
+
+        <input id="search" type="text" class="input" placeholder="Digite aqui..." />
+        <label class="switch">
+          <input id="toggleswitch" type="checkbox" checked="checked">
+          <span class="slider round"> In São Paulo </span>
+        </label>
+      </div>
+      <button type="button" class="searchButton"></button>
+    </div>
+
+    <div id="output" class="even-odd">
+      <div class="row">
+
+      </div>
+    </div>
+
+    <footer class="footer"><br />Vem ser Fat Food</footer>
+</body>
+
+</html>
